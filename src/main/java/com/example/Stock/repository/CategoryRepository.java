@@ -21,7 +21,7 @@ public interface CategoryRepository extends JpaRepository<Category, UUID> {
      * Find a category by its name.
      * 
      * @param name the name of the category
-     * @return Optional containing the category if found
+     * @return Optional containing the category if foundqsd
      */
     Optional<Category> findByName(String name);
 
@@ -35,7 +35,7 @@ public interface CategoryRepository extends JpaRepository<Category, UUID> {
 
     /**
      * Check if a category with the given name exists.
-     * 
+     *
      * @param name the name to check
      * @return true if a category with this name exists
      */

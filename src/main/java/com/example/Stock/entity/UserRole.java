@@ -26,6 +26,8 @@ public enum UserRole {
      */
     CASHIER("cashier");
 
+
+    
     private final String value;
 
     UserRole(String value) {
