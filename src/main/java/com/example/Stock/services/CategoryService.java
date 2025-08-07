@@ -85,5 +85,7 @@ public interface CategoryService {
      * @return list of categories with products
      */
     List<Category> getCategoriesWithProducts();
+    
+
 }
 

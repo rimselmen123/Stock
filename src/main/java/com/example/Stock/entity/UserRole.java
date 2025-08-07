@@ -19,14 +19,15 @@ public enum UserRole {
      * Can manage inventory, view reports, and oversee operations.
      */
     MANAGER("manager"),
-
+    //3amel normal
+    WORKER("worker"),
     /**
      * Cashier role with basic operational access.
      * Can process sales, view inventory, and perform basic transactions.
      */
     CASHIER("cashier");
 
-
+    
     
     private final String value;
 

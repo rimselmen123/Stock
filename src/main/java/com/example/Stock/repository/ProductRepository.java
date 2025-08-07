@@ -7,7 +7,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
-
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -47,10 +46,10 @@ public interface ProductRepository extends JpaRepository<Product, UUID> {
     /**
      * Find products by category.
      * 
-     * @param category the category to filter by
+     * @param name the category to filter by
      * @return list of products in the specified category
      */
-    List<Product> findByCategory(Category category);
+    List<Product> findByCategoryName(String category);
 
     /**
      * Find products by category ID.
@@ -60,6 +59,13 @@ public interface ProductRepository extends JpaRepository<Product, UUID> {
      */
     List<Product> findByCategoryCategoryId(UUID categoryId);
 
+    /**
+     * Find products by category ID.
+     * 
+     * @param category the category ID to filter by
+     * @return list of products in the specified category
+     */
+    List<Product> findByCategory(Category category);
     /**
      * Find products that have a specific tag.
      * 
